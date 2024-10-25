@@ -49,7 +49,7 @@ public class Main {
     // allocates some variables.
     // by default it gives the default values llike null, 0, 0.0
 
-    // this
+    // this - which object are you referring to
     // we need a keyword to access the object
     // whenever we create an object a constructor is called
   }
@@ -78,7 +78,8 @@ class Student {
     this.name = "dp";
     this.rollNum = 0;
   }
-
+  // Student dp = new Student("dp",12,23);
+  //this will be replaced with dp
   Student(String nam, int num, int m) {
     this.marks = m;
     this.name = nam;
