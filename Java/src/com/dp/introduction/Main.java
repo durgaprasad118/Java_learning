@@ -52,10 +52,15 @@ public class Main {
     // this - which object are you referring to
     // we need a keyword to access the object
     // whenever we create an object a constructor is called
+    Student rahul = new Student();
+    Student one = rahul;
+
+    one.name ="Benq";
+    System.out.println(rahul.name);
   }
 
 }
-
+//lhs(reference i.e. bus) is looked by compiler & rhs (object i.e. new Bus()) is looked by jvm
 class Student {
   int rollNum;
   float marks;
@@ -73,10 +78,14 @@ class Student {
     this.name = name;
   }
 
-  Student() {
-    this.marks = 0;
-    this.name = "dp";
-    this.rollNum = 0;
+//  Student() {
+//    this.marks = 0;
+//    this.name = "dp";
+//    this.rollNum = 0;
+//  }
+
+  Student(){
+    this("kunal Kushwaha",2,12);
   }
   // Student dp = new Student("dp",12,23);
   //this will be replaced with dp
