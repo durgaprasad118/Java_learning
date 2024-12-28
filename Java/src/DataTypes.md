@@ -19,6 +19,7 @@ boolean isEven = true;
 - Wrapper Classes
     ```java
     Integer n = 45;
+    
     ```
 - n. we get so many properties and methods are available
 
