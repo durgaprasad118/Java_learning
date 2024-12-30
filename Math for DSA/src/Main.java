@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 //        int  n = in.nextInt();
-        System.out.println(gcdd(9,12));
+        System.out.println(poww(2,-3));
     }
     static int DigiCount(int n){
         int digitCount =0;
@@ -91,4 +91,30 @@ static void betterPrime(int n){
         }
         return gcd;
     }
+    //power exponentiation
+    static int Exponent(int x, int n){
+        return (int)Math.pow(x,n);
+    }
+    //power
+    static int poww(int x,int n){
+        int m = n;
+        if(n<0) {
+            n= n*(-1);
+        }
+        int answer =1;
+        while (n>0){
+            if(n%2==1){
+                answer*=x;
+                n--;
+            }else{
+                n= n/2;
+                x= x*x;
+            }
+        }
+        if(m<0){
+            return 1/answer;
+        }
+        return answer;
+    }
+    //range of primes from L-R range
 }
