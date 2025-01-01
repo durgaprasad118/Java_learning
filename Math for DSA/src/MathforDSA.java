@@ -33,7 +33,6 @@ public class MathforDSA {
     }
     //printing primes less than a given number n.
     //SIeve of Erathosthenes
-
     //initially the primes[] is false
     // so initially all are primes
     // start from 2 and then make the multiples as true
