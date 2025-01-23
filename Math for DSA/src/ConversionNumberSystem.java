@@ -24,19 +24,15 @@ public class ConversionNumberSystem {
     }
 
     //convert to other bases from the Decimal
-    static int OtherBases(int b,int n){
-        int ans =0;
+    static int DecimalToBaseb(int n, int b){
+        int ans=0;
+        int power =1;
         while(n>0){
             int rem = n%b;
-            ans = ans*10 + rem;
+            ans += rem*power;
             n/=b;
+            power*=10;
         }
-        //we neeed to write in the reverse order
-       int answer = 0;
-        while(ans>0){
-            answer= answer*10 + ans%10;
-            ans/=10;
-        }
-        return answer;
+        return ans;
     }
 }
